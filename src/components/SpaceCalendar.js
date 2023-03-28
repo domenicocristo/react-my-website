@@ -7,7 +7,7 @@ function SpaceCalendar() {
   return (
     <div className={SpaceCalendarCSS.SpaceCalendar}>
       <Navbar />
-      <h1>Hello World!</h1>
+      <h1>SpaceCalendar</h1>
       <Footer />
     </div>
   );

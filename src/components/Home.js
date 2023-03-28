@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className={HomeCSS.Home}>
       <Navbar />
-      <h1>Hello World!</h1>
+      <h1>Home</h1>
       <Footer />
     </div>
   );
