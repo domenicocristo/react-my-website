@@ -9,7 +9,11 @@ function SpaceCalendar() {
 
   useEffect(() => {
     axios.get('https://ll.thespacedevs.com/2.0.0/launch/upcoming')
-      .then(response => setLaunchData(response.data.results))
+      .then(response => {
+        // Filters out expired launches and sets the status only with valid launches
+        const validLaunches = response.data.results.filter(launch => new Date(launch.net) > new Date());
+        setLaunchData(validLaunches);
+      })
       .catch(error => console.error(error));
   }, []);
 
