@@ -21,13 +21,21 @@ function Launches() {
     <div className={LaunchesCSS.Launches}>
       <Navbar />
       {launchData.map(launch => (
-        <div key={launch.id}>
-          <h1>{launch.name}</h1>
-          <h3>{new Date(launch.net).toLocaleString('en-GB', { dateStyle: 'short', timeStyle: 'short' }).replace(',', ' |')}</h3>
-          <h3>{launch.status.name}</h3>
-          <h3>{launch.pad.location.name}</h3>
-          <h3>{launch.pad.name}</h3>
-          <h3>{launch.launch_service_provider.name}</h3>  
+        <div className={LaunchesCSS.Launches__CardsContainer}>
+          <div className={LaunchesCSS.Launches__Cards} key={launch.id}>
+            <div className={LaunchesCSS.Launches__CardsImage}>
+              <img src={launch.image} alt=""/>
+            </div>
+
+            <div className={LaunchesCSS.Launches__CardsDescription}>
+              <h1>{launch.name}</h1>
+              <h3>{launch.launch_service_provider.name}</h3> 
+              <h3>{new Date(launch.net).toLocaleString('en-GB', { dateStyle: 'short', timeStyle: 'short' }).replace(',', ' |')}</h3>
+              <h3>{launch.status.name}</h3>
+              <h3>{launch.pad.location.name}</h3>
+              <h3>{launch.pad.name}</h3>
+            </div>  
+          </div>
         </div>
       ))}
       <Footer />

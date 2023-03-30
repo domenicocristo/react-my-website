@@ -1,0 +1,39 @@
+.Launches {
+    background-color: #121212;
+    color: #fff;
+}
+
+.Launches__CardsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.Launches__Cards {
+    display: flex;
+    background-color: #333;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.Launches__CardsImage {
+    height: 300px;
+    width: 250px;
+
+}
+
+.Launches__CardsImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.Launches__CardsDescription {
+    width: 550px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Launches__CardsDescription h3 {
+    margin: 10px;
+}
