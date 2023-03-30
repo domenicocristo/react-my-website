@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar.js';
 import Footer from './Footer.js';
-import SpaceCalendarCSS from './SpaceCalendar.module.css';
+import LaunchesCSS from './Launches.module.css';
 
-function SpaceCalendar() {
+function Launches() {
   const [launchData, setLaunchData] = useState([]);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function SpaceCalendar() {
   }, []);
 
   return (
-    <div className={SpaceCalendarCSS.SpaceCalendar}>
+    <div className={LaunchesCSS.Launches}>
       <Navbar />
       {launchData.map(launch => (
         <div key={launch.id}>
@@ -35,4 +35,4 @@ function SpaceCalendar() {
   );
 }
 
-export default SpaceCalendar;
+export default Launches;

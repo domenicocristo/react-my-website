@@ -11,7 +11,7 @@ function Navbar() {
           <Link className={NavbarCSS.Navbar__link} to="/">Home</Link>
         </li>
         <li className={NavbarCSS.Navbar__item}>
-          <Link className={NavbarCSS.Navbar__link} to="/space-calendar">Space Calendar</Link>
+          <Link className={NavbarCSS.Navbar__link} to="/launches">Launches</Link>
         </li>
       </ul>
     </nav>
