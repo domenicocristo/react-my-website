@@ -1,6 +1,12 @@
-.Home {
+.Home__LaunchesSection {
     height: 100vh;
-    background-image: url(../assets/falcon9_homepage.jpg);
+    background-image: url(../assets/falcon9.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.Home__LaunchesSection h1 {
+    width: 50vw;
+    font-size: 70px;
+    color: #1E1E1E;
+    padding: 80px 20px 20px 30px;
 }

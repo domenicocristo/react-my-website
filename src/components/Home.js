@@ -7,7 +7,9 @@ function Home() {
   return (
     <div className={HomeCSS.Home}>
       <Navbar />
-      <h1>Home</h1>
+      <div className={HomeCSS.Home__LaunchesSection}>
+        <h1>Check out the launches section to stay up-to-date on upcoming space launches</h1>
+      </div>
       <Footer />
     </div>
   );
