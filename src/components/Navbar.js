@@ -5,7 +5,7 @@ import NavbarCSS from './Navbar.module.css';
 function Navbar() {
   return (
     <nav className={NavbarCSS.Navbar}>
-      <h1>Navbar</h1>
+      <Link className={NavbarCSS.Navbar__logo} to="/">Space news</Link>
       <ul className={NavbarCSS.Navbar__list}>
         <li className={NavbarCSS.Navbar__item}>
           <Link className={NavbarCSS.Navbar__link} to="/">Home</Link>
